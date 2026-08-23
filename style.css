@@ -1,0 +1,373 @@
+:root {
+    --primary-purple: #705299;
+    --accent-blue: #70a1ff;
+    --text-color: #2f3542;
+    --card-border: #a29bfe;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #eccc68 0%, #f1f2f6 30%, #e0c3fc 70%, #8ec5fc 100%);
+    background-attachment: fixed;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+/* Main Container */
+.main-content {
+    max-width: 1100px;
+    margin: 1.5rem auto;
+    padding: 0 1.5rem;
+}
+
+/* Header Banner Layout */
+.top-banner-container {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.top-toran {
+    max-width: 380px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+header h1, .top-banner-container h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    color: var(--primary-purple);
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 16px;
+    background: rgba(108, 92, 231, 0.85);
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: #00cec9;
+}
+
+/* Horizontal Images Row Outside the Story Card */
+.images-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+}
+
+.row-img {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+}
+
+.center-rakhi-img {
+    width: 180px;
+    height: 180px;
+}
+
+/* Story Box Container */
+.card {
+    background: rgba(255, 255, 255, 0.94);
+    border: 2px solid var(--card-border);
+    border-radius: 16px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 20px rgba(112, 82, 153, 0.1);
+    backdrop-filter: blur(4px);
+}
+
+/* Dual Column Story Layout */
+.bilingual-grid {
+    display: flex;
+    gap: 2.5rem;
+    align-items: flex-start;
+}
+
+.story-column {
+    flex: 1;
+}
+
+.telugu-column {
+    border-left: 2px dashed #e0c3fc;
+    padding-left: 2.5rem;
+}
+
+.story-column h2 {
+    color: var(--primary-purple);
+    margin-top: 0;
+    font-size: 1.45rem;
+    border-bottom: 2px solid #e0c3fc;
+    padding-bottom: 8px;
+}
+
+.story-column p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: #333333;
+    margin-bottom: 1rem;
+}
+
+.promise-box {
+    background: #f3ebff;
+    border-left: 4px solid var(--primary-purple);
+    padding: 1rem;
+    font-style: italic;
+    font-weight: 600;
+    color: #4a154b;
+    border-radius: 0 8px 8px 0;
+    margin: 1.2rem 0;
+    font-size: 0.95rem;
+}
+
+.story-highlight {
+    background: #fff8e7;
+    border: 1px solid #ffe0b2;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+/* Sister Navigation Links */
+.sister-links-container {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.sister-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.sister-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--primary-purple);
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: transform 0.2s ease;
+}
+
+.sister-item img {
+    width: 140px;
+    height: 150px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.sister-item:hover {
+    transform: translateY(-5px);
+}
+
+.sister-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 350px;
+    border-radius: 12px;
+    border: 3px solid #6c5ce7;
+    display: block;
+    margin: 1.5rem auto;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.message-box {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-left: 5px solid #6c5ce7;
+    padding: 1.2rem;
+    font-style: italic;
+    font-size: 1.05rem;
+    margin-top: 1rem;
+    border-radius: 0 10px 10px 0;
+}
+
+.protected-content {
+    display: none;
+}
+
+.passcode-box {
+    text-align: center;
+    padding: 2rem;
+}
+
+input[type="password"] {
+    padding: 10px 14px;
+    font-size: 1rem;
+    border: 2px solid #a29bfe;
+    border-radius: 8px;
+    margin-right: 8px;
+    outline: none;
+}
+
+input[type="password"]:focus {
+    border-color: #6c5ce7;
+}
+
+.btn {
+    background: linear-gradient(135deg, #7d5fff, #6c5ce7);
+    color: #ffffff;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(108, 92, 231, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* -------------------------------------------------------------
+   ANIMATED PARTICLES: BUTTERFLIES, STARS & FLOWERS IN MOTION
+---------------------------------------------------------------- */
+
+/* Container Setup */
+.butterfly-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 99;
+    overflow: hidden;
+}
+
+/* Base style for elements */
+.butterfly-container span {
+    position: absolute;
+    display: inline-block;
+    filter: drop-shadow(0px 2px 5px rgba(0,0,0,0.2));
+}
+
+/* 🦋 Butterfly Specific Motion */
+.butterfly-container .butterfly {
+    font-size: 2.3rem;
+    animation: flyUp 7s infinite linear, flapWings 0.28s infinite ease-in-out alternate;
+}
+
+/* ⭐ Star Specific Motion */
+.butterfly-container .star {
+    font-size: 1.9rem;
+    animation: flyUp 9s infinite linear, twinkle 1s infinite ease-in-out alternate;
+}
+
+/* 🌸 Flower Specific Motion */
+.butterfly-container .flower {
+    font-size: 2.1rem;
+    animation: flyUp 10s infinite linear, spin 5s infinite linear;
+}
+
+/* Individual Positions, Delays, and Speeds */
+.butterfly-container span:nth-child(1)  { left: 3%;  animation-duration: 7s, 0.25s;  animation-delay: 0s, 0s; }
+.butterfly-container span:nth-child(2)  { left: 12%; animation-duration: 9s, 0.35s;  animation-delay: 2s, 0.1s; }
+.butterfly-container span:nth-child(3)  { left: 22%; animation-duration: 6.5s, 0.22s; animation-delay: 4s, 0.05s; }
+.butterfly-container span:nth-child(4)  { left: 32%; animation-duration: 10s, 0.3s;   animation-delay: 1s, 0.15s; }
+.butterfly-container span:nth-child(5)  { left: 42%; animation-duration: 8s, 0.28s;  animation-delay: 3s, 0.08s; }
+.butterfly-container span:nth-child(6)  { left: 52%; animation-duration: 11s, 0.32s;  animation-delay: 0.5s, 0.12s; }
+.butterfly-container span:nth-child(7)  { left: 62%; animation-duration: 7.5s, 0.24s; animation-delay: 2.5s, 0.02s; }
+.butterfly-container span:nth-child(8)  { left: 72%; animation-duration: 9.5s, 0.33s; animation-delay: 1.5s, 0.07s; }
+.butterfly-container span:nth-child(9)  { left: 82%; animation-duration: 6s, 0.21s;  animation-delay: 3.5s, 0.11s; }
+.butterfly-container span:nth-child(10) { left: 91%; animation-duration: 8.5s, 0.29s; animation-delay: 0.8s, 0.04s; }
+
+.butterfly-container span:nth-child(11) { left: 7%;  animation-duration: 11s, 1.5s;  animation-delay: 1s, 0s; }
+.butterfly-container span:nth-child(12) { left: 27%; animation-duration: 13s, 1s;    animation-delay: 3s, 0.5s; }
+.butterfly-container span:nth-child(13) { left: 47%; animation-duration: 9s, 1.8s;   animation-delay: 0s, 0.2s; }
+.butterfly-container span:nth-child(14) { left: 67%; animation-duration: 12s, 1.2s;  animation-delay: 4s, 0.8s; }
+.butterfly-container span:nth-child(15) { left: 87%; animation-duration: 10s, 1.4s;  animation-delay: 2s, 0.3s; }
+
+.butterfly-container span:nth-child(16) { left: 16%; animation-duration: 14s, 5s;   animation-delay: 2s, 0s; }
+.butterfly-container span:nth-child(17) { left: 36%; animation-duration: 11s, 7s;   animation-delay: 5s, 1s; }
+.butterfly-container span:nth-child(18) { left: 56%; animation-duration: 15s, 6s;   animation-delay: 1s, 2s; }
+.butterfly-container span:nth-child(19) { left: 76%; animation-duration: 10s, 8s;   animation-delay: 3s, 0.5s; }
+.butterfly-container span:nth-child(20) { left: 94%; animation-duration: 12s, 5.5s; animation-delay: 0s, 1.5s; }
+
+/* Motion Keyframes */
+@keyframes flapWings {
+    0% { transform: scaleX(1) rotate(-8deg); }
+    100% { transform: scaleX(0.25) rotate(8deg); }
+}
+
+@keyframes twinkle {
+    0% { opacity: 0.25; transform: scale(0.7) rotate(0deg); }
+    100% { opacity: 1; transform: scale(1.5) rotate(20deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(180deg) scale(1.15); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+
+@keyframes flyUp {
+    0% {
+        top: 105vh;
+        margin-left: 0px;
+        opacity: 0;
+    }
+    12% {
+        opacity: 1;
+        margin-left: 30px;
+    }
+    30% {
+        margin-left: -35px;
+    }
+    50% {
+        margin-left: 35px;
+    }
+    70% {
+        margin-left: -30px;
+    }
+    88% {
+        opacity: 1;
+        margin-left: 25px;
+    }
+    100% {
+        top: -10vh;
+        margin-left: 0px;
+        opacity: 0;
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 820px) {
+    .bilingual-grid {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .telugu-column {
+        border-left: none;
+        border-top: 2px dashed #e0c3fc;
+        padding-left: 0;
+        padding-top: 1.5rem;
+    }
+}
